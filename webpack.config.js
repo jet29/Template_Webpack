@@ -13,7 +13,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Development',
+            hash: true,
+            title: 'My Awesome application',
+            myPageHeader: 'Hello World',
+            template: './src/index.html',
         }),
       ],
     output: {
